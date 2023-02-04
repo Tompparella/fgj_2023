@@ -1,11 +1,12 @@
 extends Character
+class_name Player
 
 var moveSpeed : int = 300
 var interactionDistance : int = 70
 var facingDirection : Vector2 = Vector2()
 
 func _ready():
-	var rayCast = get_node("RayCast2D")
+	var rayCast = get_node("RayCast2D");
 
 func move(delta):
 	velocity = Vector2()

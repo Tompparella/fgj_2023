@@ -13,17 +13,33 @@ _global_script_classes=[{
 "class": &"Character",
 "language": &"GDScript",
 "path": "res://assets/characters/Character.gd"
+}, {
+"base": "Character",
+"class": &"Player",
+"language": &"GDScript",
+"path": "res://assets/characters/player/player.gd"
+}, {
+"base": "Camera2D",
+"class": &"PlayerCamera",
+"language": &"GDScript",
+"path": "res://assets/camera/Camera.gd"
 }]
 _global_script_class_icons={
-"Character": ""
+"Character": "",
+"Player": "",
+"PlayerCamera": ""
 }
 
 [application]
 
 config/name="fgj_2023"
-run/main_scene="res://assets/characters/player/map/map.tscn"
+run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*res://singletons/GameManager.gd"
 
 [input]
 
