@@ -7,3 +7,6 @@
 
 # Mono specific ignores
 **/.mono/
+
+# Godot 4+ specific ignores
+.godot/
