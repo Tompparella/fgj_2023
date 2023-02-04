@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://cr0wl46wyik7r"]
+
+[ext_resource type="Script" path="res://assets/characters/opponent/opponent.gd" id="1_ecgkq"]
+[ext_resource type="Texture2D" uid="uid://b3eayvixflxou" path="res://no_anger.png" id="1_x3uy0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jbh3e"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_77edb"]
+radius = 85.63
+
+[node name="opponent" type="CharacterBody2D"]
+position = Vector2(458, 241)
+script = ExtResource("1_ecgkq")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.5, 3.5)
+scale = Vector2(0.2, 0.201)
+texture = ExtResource("1_x3uy0")
+
+[node name="ChaseArea" type="Area2D" parent="."]
+visible = false
+position = Vector2(0, 7.5)
+scale = Vector2(50, 50)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChaseArea"]
+visible = false
+shape = SubResource("CircleShape2D_jbh3e")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_77edb")
+
+[connection signal="body_shape_entered" from="ChaseArea" to="." method="_on_chase_area_body_shape_entered"]
+[connection signal="body_shape_exited" from="ChaseArea" to="." method="_on_chase_area_body_shape_exited"]

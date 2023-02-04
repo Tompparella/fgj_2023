@@ -21,6 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="fgj_2023"
+run/main_scene="res://assets/characters/player/map/map.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 config/icon="res://icon.svg"
 
