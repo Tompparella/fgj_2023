@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://assets/characters/player/player.gd" id="1_04tlc"]
 [ext_resource type="Texture2D" uid="uid://b52prgrdckged" path="res://fallout___mole_rat_by_drakull232_d9h9nlc-fullview-removebg-preview.png" id="2_st8km"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_quowq"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_33jl3"]
 size = Vector2(27.5, 20)
 
 [node name="Player" type="CharacterBody2D"]
@@ -15,7 +15,7 @@ metadata/_edit_group_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-15, 0)
 scale = Vector2(20, 20)
-shape = SubResource("RectangleShape2D_quowq")
+shape = SubResource("RectangleShape2D_33jl3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_st8km")
