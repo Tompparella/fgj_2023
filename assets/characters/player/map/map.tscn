@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1g1lrlpjv4j8"]
+[gd_scene load_steps=3 format=3 uid="uid://b1g1lrlpjv4j8"]
 
-[ext_resource type="PackedScene" uid="uid://dkisrmo65ktia" path="res://player/player.tscn" id="1_7ednk"]
+[ext_resource type="PackedScene" uid="uid://cr0wl46wyik7r" path="res://assets/characters/opponent/opponent.tscn" id="1_s2em3"]
+[ext_resource type="PackedScene" uid="uid://7mawqlkt2fki" path="res://assets/characters/player/player.tscn" id="2_fvecs"]
 
 [node name="map" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_7ednk")]
-position = Vector2(576, 305)
+[node name="opponent" parent="." instance=ExtResource("1_s2em3")]
+
+[node name="Player" parent="." instance=ExtResource("2_fvecs")]
+position = Vector2(1065, 465)
