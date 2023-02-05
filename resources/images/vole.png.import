@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b52prgrdckged"
-path="res://.godot/imported/fallout___mole_rat_by_drakull232_d9h9nlc-fullview-removebg-preview.png-1229e454e5acda5907c0474eb83f305e.ctex"
+uid="uid://cwmcai72yf65g"
+path="res://.godot/imported/vole.png-3a87d249c95d0afb022236afcb053314.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fallout___mole_rat_by_drakull232_d9h9nlc-fullview-removebg-preview.png"
-dest_files=["res://.godot/imported/fallout___mole_rat_by_drakull232_d9h9nlc-fullview-removebg-preview.png-1229e454e5acda5907c0474eb83f305e.ctex"]
+source_file="res://resources/images/vole.png"
+dest_files=["res://.godot/imported/vole.png-3a87d249c95d0afb022236afcb053314.ctex"]
 
 [params]
 

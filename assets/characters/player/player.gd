@@ -14,15 +14,19 @@ func move(delta):
 	#inputs
 	if Input.is_action_pressed("move_up"):
 		velocity.y -= 1
+		rotation = 0
 		facingDirection = Vector2(0, -1)
 	if Input.is_action_pressed("move_down"):
 		velocity.y += 1
+		rotation = 3.14
 		facingDirection = Vector2(0, 1)
 	if Input.is_action_pressed("move_left"):
 		velocity.x -= 1
+		rotation = -1.57
 		facingDirection = Vector2(-1, 0)
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
+		rotation = 1.57
 		facingDirection = Vector2(1, 0)
 	#prevent faster diagonal movement
 	velocity = velocity.normalized() * moveSpeed

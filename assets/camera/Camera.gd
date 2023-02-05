@@ -15,3 +15,4 @@ func initialize(_target: Character):
 func _physics_process(delta):
 	if (target):
 		global_position = target.position
+
